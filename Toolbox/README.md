@@ -6,4 +6,4 @@ This folder contains the MatLab toolboxes used in this study:
 
 and the function eegfilt.m from the toolbox EEGLab. This function was used to filter the simulated LFPs.
 
-Please at all the toolbox to the MatLab path before running the codes.
+Please unzip the files and add all the toolbox to the MatLab path before running the codes.
