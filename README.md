@@ -9,7 +9,7 @@ MatLab (release 2018b)
 A memory of at least 16 GB is needed to run the trials to create the f-I curves. 
 
 ## Description
-
+- [GenerateFigures](GenerateFigures): this folder contains the programs used to create the figures.
 
 ## Contributing
 Comments and pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
