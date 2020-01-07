@@ -8,6 +8,14 @@ MatLab (release 2018b)
 
 A memory of at least 16 GB is needed to run the trials to create the f-I curves. 
 
+## Toolbox
+For the numerical simulations and data processing the following MatLab toolboxes were used:
+- [CSDplotter-master](https://github.com/espenhgn/CSDplotter)
+- [RasterPlot](https://www.mathworks.com/matlabcentral/fileexchange/45671-flexible-and-fast-spike-raster-plotting)
+- [SDETools-master](https://github.com/horchler/SDETools)
+- [EEGLAB](https://sccn.ucsd.edu/eeglab/index.php), specifically the function [eegfilt.m](https://sccn.ucsd.edu/~arno/eeglab/auto/eegfilt.html).
+You can download them from the links or find them in the folder [Toolbox]().
+
 ## Description
 - [GenerateFigures](GenerateFigures): this folder contains the programs used to create the figures.
 
