@@ -14,7 +14,7 @@ For the numerical simulations and data processing the following MatLab toolboxes
 - [RasterPlot](https://www.mathworks.com/matlabcentral/fileexchange/45671-flexible-and-fast-spike-raster-plotting)
 - [SDETools-master](https://github.com/horchler/SDETools)
 - [EEGLAB](https://sccn.ucsd.edu/eeglab/index.php), specifically the function [eegfilt.m](https://sccn.ucsd.edu/~arno/eeglab/auto/eegfilt.html).
-You can download them from the links or find them in the folder [Toolbox]().
+You can download them from the links or find them in the folder [Toolbox](Toolbox).
 
 ## Description
 - [GenerateFigures](GenerateFigures): this folder contains the programs used to create the figures.
