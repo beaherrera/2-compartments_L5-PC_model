@@ -1,4 +1,4 @@
-This folder contains the codes used to generate the figures of the paper except of the illustrative ones.
+This folder contains the codes used to generate the figures of the paper except for the illustrative figures (Fig. 1 and Fig. 6).
 
 - fig_fIcurve.m generates Figure 2. Frequency - Input relationship.
 - fig_BACfiringWithExp.m generates Figure 3. Back-propagating AP activated Ca2+ spike firing.
