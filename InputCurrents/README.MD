@@ -8,3 +8,6 @@ Noisy currents with mean mu, standard deviation sigma, and correction length tau
  I(t+dt)=I(t)+(mu-I(t))/tau+sigma *Gt *sqrt(2*dt/tau)
  
 where: Gt is a random number taken each time step from a Gaussian distribution with mean and standard deviation 1.
+
+- [doubleExpFunct.m](doubleExpFunct.m): generates a double exponential functions with time constants tau1 and tau2.
+- [square_pulse.m](square_pulse.m): creates a train of square pulses.
