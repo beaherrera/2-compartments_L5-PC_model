@@ -18,8 +18,8 @@ You can download them from the links or find them in the folder [Toolbox](Toolbo
 
 ## Description
 - [GenerateFigures](GenerateFigures): contains the programs used to create the figures.
-- [SingleNeuron](SingleNeuron): contains the model codes with Ih blocked and without blocking Ih for a single neuron. 
 - [InputCurrents](InputCurrents): contains the functions used to generate the input currents used as stimulus.
+- [SingleNeuron](SingleNeuron): contains the model codes with Ih blocked and without blocking Ih for a single neuron. 
 
 ## Contributing
 Comments and pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
