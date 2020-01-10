@@ -1,7 +1,7 @@
 # 2-compartments_L5-PC_model
 Two-compartments Layer 5 Pyramidal Cell Model
-- Soma/basal-dendrites compartment includes typical Na+ and K+ conductances. 
-- Trunk/apical-dendrites compartments includes: persistent Na+ (Nap), hyperpolarization-activated cation (Ih), slow inactivation K+ (Ks), muscarinic K+ (IM) and Ca2+ L-type currents (CaL). 
+
+The basal-dendritic/somatic compartment includes the classic Hodgkin-Huxley sodium (I_Na) and potassium delayed rectifier (I_Kdr) currents (Hodgkin and Huxley, 1952). The apical-dendrite/trunk compartment includes persistent Na^+ current (I_Nap) (Magistretti and Alonso, 1999), Ca^(2+) L-type current (I_CaL) (Lytton and Sejnowski, 1991), hyperpolarization-activated non-specific cation current (I_h) (Kole et al., 2006), muscarinic K+ current (I_M) (Adams et al., 1982), and the slow-inactivating potassium current (I_Ks) (Korngreen and Sakmann, 2000).
 
 ## Plataform
 MatLab (release 2018b)
