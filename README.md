@@ -17,7 +17,9 @@ For the numerical simulations and data processing the following MatLab toolboxes
 You can download them from the links or find them in the folder [Toolbox](Toolbox).
 
 ## Description
-- [GenerateFigures](GenerateFigures): this folder contains the programs used to create the figures.
+- [GenerateFigures](GenerateFigures): contains the programs used to create the figures.
+- [SingleNeuron](SingleNeuron): contains the model codes with Ih blocked and without blocking Ih for a single neuron. 
+- [InputCurrents](InputCurrents): contains the functions used to generate the input currents used as stimulus.
 
 ## Contributing
 Comments and pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
