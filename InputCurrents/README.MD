@@ -1,4 +1,4 @@
-This folder contains functions that generate different types of imput currents.
+Functions:
 
 - [Inoise.m](Inoise.m): generates a noisy current that is Gaussian distributed with mean mu, standard deviation sigma, and a correlation length tau
 - [Inoise_incMu.m](Inoise_incMu.m): creates an in vivo-like inputs using the Ornstein-Uhlenbeck method.
