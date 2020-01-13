@@ -2,7 +2,7 @@
 % fig_CSD
 % Authors: B. Herrera et al. 2020
 % This program generates the Figure 5. LFP reflections of the Dendritic 
-% Ca2+-spikes – CSD analysis. 
+% Ca2+-spikes â€“ CSD analysis. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear
@@ -39,10 +39,10 @@ clear zs iCSD
 load([file '\CSD.mat'], 'tspan', 'zs', 'iCSD');
 
 % ICaL
-load('FiguresData\data100n\ICaLTrial1.mat'); 
+load('FiguresData\data1000n\ICaLTrial1.mat'); 
 ICaLIh = mean(ICaL,2);
 clear ICaL
-load('FiguresData\data100n\ICaLNoIhTrial1.mat'); 
+load('FiguresData\data1000n\ICaLNoIhTrial1.mat'); 
 ICaLnoIh =  mean(ICaL,2);
 clear ICaL
 
