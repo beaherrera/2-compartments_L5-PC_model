@@ -17,10 +17,11 @@ For the numerical simulations and data processing the following MatLab toolboxes
 You can download them from the links or find them in the folder [Toolbox](Toolbox).
 
 ## Description
-- [GenerateFigures](GenerateFigures): contains the programs used to create the figures.
 - [InputCurrents](InputCurrents): contains the functions used to generate the input currents.
 - [IonicCurrents](IonicCurrents): contains the channels kinetics and a test function to visualize the channel kinetics curves: activation/inactivation and time constants.
-- [SingleNeuron](SingleNeuron): contains the model codes with Ih blocked and without blocking Ih for a single neuron. 
+- [SingleNeuron](SingleNeuron): contains the model codes with Ih blocked and without blocking Ih for a single neuron.
+- [L5PCs](L5PCs): contains the model codes with Ih blocked and without blocking Ih for a collaction of L5-PCs located randomly in a cortical column. It also contains the codes for the local field potentials (LFPs) and current source density (CSD) estimations.
+- [GenerateFigures](GenerateFigures): contains the programs used to create the figures.
 
 ## Contributing
 Comments and pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
