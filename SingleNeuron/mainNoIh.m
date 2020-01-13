@@ -162,7 +162,10 @@ else
     
 end
 
-%% ----------------------------------------------- initial conditions
+%% ----------------------------------------------- initial conditions (ICs)
+% ICs are set here. However after defining the parameters in the next
+% section, the steady state of the system is found using fsolve and the
+% results will be used as the actual ICs.
 
 Vs_0 = -65; % somatic voltage
 Vd_0 = -65; % dendritic voltage
