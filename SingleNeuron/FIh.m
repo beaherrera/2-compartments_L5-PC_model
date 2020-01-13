@@ -3,7 +3,7 @@ function dXdt = FIh(t,X, theta)
 %% Global variables
 global non_state_vars non_state_num
 global I3_sq I2_sq I3pre I2pre
-global const_current pulse_train noisy_current
+global const_current pulse_train
 global I2_Final I3_Final dt
 
 %% model by Herrera et al., 2020
