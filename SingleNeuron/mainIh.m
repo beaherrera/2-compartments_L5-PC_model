@@ -160,7 +160,11 @@ else
     
 end
 
-%% ----------------------------------------------- initial conditions
+%% ----------------------------------------------- initial conditions (ICs)
+% ICs are set here. However after defining the parameters in the next
+% section, the steady state of the system is found using fsolve and the
+% results will be used as the actual ICs.
+
 VshD = 8; % [mV] Shift in the dendritic channels kinetics to account for the shift in the dendritic resting potential
 
 Vs_0 = -65; % somatic voltage
