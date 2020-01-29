@@ -10,7 +10,7 @@
 %
 % In this program, the h-current was blocked.
 %
-% model by Herrera et al., 2020
+% created by Herrera et al., 2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clc
