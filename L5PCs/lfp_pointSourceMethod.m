@@ -12,6 +12,7 @@ function [lfp, mapping] = lfp_pointSourceMethod(In, xc, yc, zc, sigma, el_pos, h
     % h: inter-electrode distance. (m)
 % - Outputs:
     % lfp: extracellular potential (mV) -> [1 channel]x[time points]
+    % created by Herrera et al., 2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Vc = 2*pi*(0.4/2)^2; % mm3
