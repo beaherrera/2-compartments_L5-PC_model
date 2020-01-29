@@ -7,6 +7,8 @@ global I_trans ICaL
 global const_current pulse_train noisy_current
 global I2_Final I3_Final dt
 
+% created by Herrera et al., 2020
+
 %% model by Herrera et al., 2020
 jj = 1;
 unit_number = theta(jj); jj=jj+1; % number of neurons;
