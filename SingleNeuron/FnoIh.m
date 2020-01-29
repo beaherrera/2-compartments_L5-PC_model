@@ -1,5 +1,7 @@
 function dXdt = FnoIh(t,X, theta)
 
+% created by Herrera et al., 2020
+
 %% Global variables
 global non_state_vars non_state_num
 global I3_sq I2_sq 
