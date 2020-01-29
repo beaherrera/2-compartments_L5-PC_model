@@ -1,6 +1,7 @@
 function current_freqRelation(V, step, tf, tspan, mustart_s, dmu)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % current_freqRelation: computes the f-I relationship 
+% created by Herrera et al., 2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 mu = (mustart_s:dmu:(mustart_s+(round(tf/step))*dmu)); % [mA] mean stimulation current
