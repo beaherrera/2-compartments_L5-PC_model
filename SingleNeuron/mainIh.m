@@ -8,7 +8,7 @@
 %   hyperpolarization-activated cation (Ih), slow inactivation K+ (Ks), 
 %   muscarinic K+ (IM) and Ca2+ L-type currents (CaL). 
 %
-% model by Herrera et al., 2020
+% created by Herrera et al., 2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % clear
