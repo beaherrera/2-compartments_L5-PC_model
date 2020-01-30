@@ -23,10 +23,6 @@ You can download them from the links or find them in the folder [Toolbox](Toolbo
 - [L5PCs](L5PCs): contains the model codes with Ih blocked and without blocking Ih for a collaction of L5-PCs located randomly in a cortical column. It also contains the codes for the local field potentials (LFPs) and current source density (CSD) estimations.
 - [GenerateFigures](GenerateFigures): contains the programs used to create the figures.
 
-## Contributing
-Comments and pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-Please make sure to update tests as appropriate.
-
 ## License
 Copyright (C) 2020 Beatriz Herrera, Amirsaman Sajad, Geoffrey F. Woodman, Jeffrey D. Schall, Jorge J. Riera.
 
