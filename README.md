@@ -37,3 +37,6 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
+
+## Citation
+Herrera B, Sajad A, Woodman GF, Schall JD, Riera JJ (2020) A Minimal Biophysical Model of Neocortical Pyramidal Cells: Implications for Frontal Cortex Microcircuitry and Field Potential Generation. bioRxiv:[2020.01.29.925180](https://doi.org/10.1101/2020.01.29.925180).
