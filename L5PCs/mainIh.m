@@ -66,8 +66,8 @@ noisy_current = 1; % if true(=1): the stimuli is a noisy current with constant m
 
 Vs_0 = -65.*ones(1, unit_number); % somatic voltage
 Vd_0 = -65.*ones(1, unit_number); % dendritic voltage
-[NamS_0, ~, NahS_0, ~] = NaKineticsB(Vs_0); % Na gating variables
-[KmS_0,~]=KKineticsB(Vs_0); % K gating variables
+[NamS_0, ~, NahS_0, ~] = NaKinetics(Vs_0); % Na gating variables
+[KmS_0,~]=KKinetics(Vs_0); % K gating variables
 [CamD_0, ~] = CaLKineticsW(Vd_0); % CaL gating variables
 Cai_inf = 76.6e-6; % [mM] intracellular equilibrium calcium concentration at rest
 Cai_0 = Cai_inf.*ones(1, unit_number); % [mM]
