@@ -169,8 +169,8 @@ VshD = 8; % [mV] Shift in the dendritic channels kinetics to account for the shi
 
 Vs_0 = -65; % somatic voltage
 Vd_0 = -55; % dendritic voltage
-[NamS_0, ~, NahS_0, ~] = NaKineticsB(Vs_0); % Na gating variables
-[KmS_0,~]=KKineticsB(Vs_0); % K gating variables
+[NamS_0, ~, NahS_0, ~] = NaKinetics(Vs_0); % Na gating variables
+[KmS_0,~]=KKinetics(Vs_0); % K gating variables
 [CamD_0, ~] = CaLKineticsW(Vd_0-VshD);
 Cai_inf = 76.6e-6; % [mM] intracellular equilibrium calcium concentration
 Cai_0 = Cai_inf; % mM
