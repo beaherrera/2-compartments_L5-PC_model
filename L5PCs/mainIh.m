@@ -51,10 +51,10 @@ fileL5PCS = ['data' num2str(unit_number) 'n']; % name of the folder where the da
 f = 149; % frequency of the train of pulses when pulse_train =1
 
 %% -- stimulus type
-const_current = 0; % if true(=1): soma stimuli is a current step pulse, and the
+const_current = 1; % if true(=1): soma stimuli is a current step pulse, and the
 %                    dendritic stimuli is either a current step pulse or a double exponential
 pulse_train = 0; % if true(=1): the somatic/dendritic input is a train of square current pulses
-noisy_current = 1; % if true(=1): the stimuli is a noisy current with constant mean and std
+noisy_current = 0; % if true(=1): the stimuli is a noisy current with constant mean and std
 % When all variables are false(=0) the somatic/dendritic input
 % current is a Noisy staircase current. This type of current was used to
 % generate the f-I curve for either somatic or dendritic stimulations.
