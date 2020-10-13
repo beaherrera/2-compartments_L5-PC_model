@@ -225,15 +225,21 @@ dXdt(ii*unit_number+1:(ii+1)*unit_number) = dKshDdt; ii = ii+1;
 dXdt(ii*unit_number+1:(ii+1)*unit_number) = dmImdt; 
 
 %% non state variabels
-alpha = 1/3;
-a = 0.5;
-beta= 1;
+% scaling factors for the returning currents, estimated from simulations
+% using the detailed L5-PC model by Hay et al. 2011
+% parameters names and values are in correspondance with Fig.1 from Herrera et al. 2020 JNeurosci 
+alphaS_1 = 0.31682; % basal dendrites
+alphaS_2 = 0.035514; % soma-AIS
+alphaS_3 = 0.64767; % oblique dendrites
+alphaD_1 = 0.17774; % distal trunk
+alphaD_2 = 0.82226; % apical tuft
+alpha_Kdr = 0.5; % scaling factor for the Kdr current
 
-Is = ((alpha).*(dVsdt.*Cm_s-(-25.5-Vs)./R_m) + a.*IKdr - I3); % soma/top oblique dendrites
-IsDx= (INa); % axon intial segment
-Ib = ((1-alpha).*(dVsdt.*Cm_s-(-25.5-Vs)./R_m) + (1-a).*IKdr); % basal dendrites
-Imbd = ICa + (beta).*IKslow; % main bifurcation apical dendrites
-Itd = (- I2 + Im + INap + (1-beta).*IKslow + (dVddt.*Cm_d)-(-64.5-Vd)./Rd_m); % tuft dendrites 
+Is = (alphaS_3.*(dVsdt.*Cm_s-(-25.5-Vs)./R_m) + alpha_Kdr.*IKdr); % 3 - oblique dendrites
+IsDx= (INa + alphaS_2.*(dVsdt.*Cm_s-(-25.5-Vs)./R_m)); % 2 - axon intial segment 
+Ib = alphaS_1.*(dVsdt.*Cm_s-(-25.5-Vs)./R_m) + (1-alpha_Kdr).*IKdr - I3; % 1 - basal dendrites
+Imbd = ICa + IKs + alphaD_1.*((dVddt.*Cm_d) - (-64.5-Vd)./Rd_m); % 4 - distal trunk
+Itd = (Im + INap - I2 + alphaD_2.*((dVddt.*Cm_d) - (-64.5-Vd)./Rd_m)); % 5 - tuft dendrites 
 
 non_state_vars = [Is, IsDx, Ib, Imbd, Itd];
 non_state_num = numel(non_state_vars);
