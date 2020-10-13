@@ -1,8 +1,8 @@
-This folder contains the model codes with Ih blocked (noIh) and with Ih present (Ih) for a collaction of L5-PCs located randomly in a cortical column.
+This folder contains the model codes without including Ih (noIh) and including Ih (Ih) for a collaction of L5-PCs located randomly in a cortical column.
 
 To solve each case, please run:
 - [mainIh.m](mainIh.m) for Ih present, and
-- [mainNoIh.m](mainNoIh.m) for Ih blocked.
+- [mainNoIh.m](mainNoIh.m) for Ih absent.
 
 In these scripts, you will find the following stimulations paradigms:
 - *const_current:* when selected -> Somatic input current is a current step pulse, whereas the dendritic input can be either a current step pulse or a double exponential. You can specify the amplitude of both stimulations as well as the duration of the square pulse by defining the stimulation onset and stimulation end. To apply an EPSP-like current or double exponential current to the dendritic compartment, set the stimulation end as 0ms. Dendritic stimulation will start at the time set by the stimulation onset. Please read comments on the codes for more details. These stimulation paradigms were used to study the BAC-firing property shown by these neurons.
