@@ -66,23 +66,20 @@ for trial=1:ntrials
     
     % -- calculating the position of each neuron on the plane. The same
     % coordinates are used for all sources per neuron
-    % - x (mm)
-    a = -3/2;
-    b = -50e-3;
-    xrN = (b-a).*rand(1,unit_number/2) + a;
-    a = 3/2;
-    b = 50e-3;
-    xrP = (b-a).*rand(1,unit_number/2) + a;
-    xc = repmat([xrN xrP],1,n);
+    % - x and y coordinates (mm)
+    rc = 3/2; % [mm] radius of the cortical column
+    xc = zeros(1,unit_number);
+    yc = zeros(1,unit_number);
     
-    % - y (mm)
-    a = -3/2;
-    b = -50e-3;
-    yrN = (b-a).*rand(1,unit_number/2) + a;
-    a = 3/2;
-    b = 50e-3;
-    yrP = (b-a).*rand(1,unit_number/2) + a;
-    yc = repmat([yrN yrP],1,n);
+    for ii=1:unit_number
+         r = sqrt(rand())*rc;
+         theta = rand()*2*pi;
+         xc(ii) = r*sin(theta);
+         yc(ii) = r*cos(theta);
+    end
+    
+    xc = repmat(xc,1,n);
+    yc = repmat(yc,1,n);
     
     % converting to m
     zc = zc.*1e-6; % um-> m
