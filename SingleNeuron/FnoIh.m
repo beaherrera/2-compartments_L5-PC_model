@@ -65,17 +65,17 @@ E_CaD = Ca_const.*log(Ca_o./Ca_i); % Nernst Equation
 
 % persistent sodium - Nap
 gbar_NapD = 0.022e-6; % [mS] maximum conducatance for persistent Na+ channels
-E_NaD = 50; % [mV] reversal potatial for the sodium channels
+E_NaD = 50 + Vsh; % [mV] reversal potatial for the sodium channels
 [NapmooD, NaptaumD, NaphooD, NaptauhD] = NapKinetics(Vd); % gating variables and their time constant
 
 % slow inactivating potasium - Ks
 gbar_KsD = 28e-6; % [S] maximum conducatance for slow K+ channels
-E_KD = -85; % [mV] reversal potatial for the sodium channels 
-[KsmooD, KstaumD, KshooD, KstauhD] = KslowKinetics(Vd); % gating variables and their time constant
+E_KD = -85 + Vsh; % [mV] reversal potatial for the sodium channels 
+[KsmooD, KstaumD, KshooD, KstauhD] = KslowKinetics(Vd-Vsh); % gating variables and their time constant
 
 % M-current Im
 gbar_Im = 1e-6; % [S] maximum conducatance
-[Immoo,Imtaum]=ImKinetics(Vd); % gating variables and their time constant
+[Immoo,Imtaum]=ImKinetics(Vd-Vsh); % gating variables and their time constant
 
 %% --------------------------------- stimulation protocol
 %% constant current
