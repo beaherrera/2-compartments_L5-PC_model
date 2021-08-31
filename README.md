@@ -39,4 +39,4 @@ GNU General Public License for more details.
 [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
 
 ## Citation
-Herrera B, Sajad A, Woodman GF, Schall JD, Riera JJ (2020) A Minimal Biophysical Model of Neocortical Pyramidal Cells: Implications for Frontal Cortex Microcircuitry and Field Potential Generation. bioRxiv:[2020.01.29.925180](https://doi.org/10.1101/2020.01.29.925180).
+Herrera B, Sajad A, Woodman GF, Schall JD, Riera JJ. A minimal biophysical model of neocortical pyramidal cells: implications for frontal cortex microcircuitry and field potential generation. J Neurosci **40**, 8513-8529 (2020); DOI: https://doi.org/10.1523/JNEUROSCI.0221-20.2020.
