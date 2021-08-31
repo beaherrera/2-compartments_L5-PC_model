@@ -4,7 +4,7 @@ function dXdt = FIh(t,X, theta)
 
 %% Global variables
 global non_state_vars non_state_num
-global I3_sq I2_sq I3pre I2pre
+global I3_sq I2_sq 
 global const_current pulse_train
 global I2_Final I3_Final dt
 
@@ -67,16 +67,16 @@ E_CaD = Ca_const.*log(Ca_o./Ca_i); %Equilibrium Potential Ca
 
 % persistent sodium - Nap
 gbar_NapD = 0.022e-6; % [S] maximum conducatance for persistent Na+ channels
-E_NaD = 50 + Vsh; % [mV] reversal potatial for the sodium channels
+E_NaD = 50; % [mV] reversal potatial for the sodium channels
 [NapmooD, NaptaumD, NaphooD, NaptauhD] = NapKinetics(Vd-VshD); % gating variables and their time constant
 
 % slow inactivating potasium - Ks
 gbar_KsD = 28e-6; % [S] maximum conducatance for slow K+ channels
-E_KD = -85 + Vsh; % [mV] reversal potatial for the sodium channels
+E_KD = -85; % [mV] reversal potatial for the sodium channels
 [KsmooD, KstaumD, KshooD, KstauhD] = KslowKinetics(Vd-VshD); % gating variables and their time constant
 
 % Ih current
-E_Ih = -45 + Vsh; % [mV] reversal potentail used for the Ih current
+E_Ih = -45; % [mV] reversal potentail used for the Ih current
 gbar_Ih = 0.865e-6; % [S] maximum conductance of non-specific cation channels
 [Ihmoo,Ihtaum]=IhKinetics(Vd-VshD); % gating variables and their time constant
 
