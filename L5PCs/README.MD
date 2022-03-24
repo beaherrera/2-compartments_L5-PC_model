@@ -1,5 +1,6 @@
 This folder contains the model codes without including Ih (noIh) and including Ih (Ih) for a collaction of L5-PCs located randomly in a cortical column.
 
+Before running scripts, please **add [InputCurrents](InputCurrents) and [IonicCurrents](IonicCurrents) to the MATLAB path.**
 To solve each case, please run:
 - [mainIh.m](mainIh.m) for Ih present, and
 - [mainNoIh.m](mainNoIh.m) for Ih absent.
