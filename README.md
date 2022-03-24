@@ -19,8 +19,8 @@ You can download them from the links or find them in the folder [Toolbox](Toolbo
 ## Description
 - [InputCurrents](InputCurrents): contains the functions used to generate the input currents.
 - [IonicCurrents](IonicCurrents): contains the channels kinetics and a test function to visualize the channel kinetics curves: activation/inactivation and time constants.
-- [SingleNeuron](SingleNeuron): contains the model codes with Ih blocked and without blocking Ih for a single neuron.
-- [L5PCs](L5PCs): contains the model codes with Ih blocked and without blocking Ih for a collaction of L5-PCs located randomly in a cortical column. It also contains the codes for the local field potentials (LFPs) and current source density (CSD) estimations.
+- [SingleNeuron](SingleNeuron): contains the model codes with Ih blocked and without blocking Ih for a single neuron. **Add [InputCurrents](InputCurrents) and [IonicCurrents](IonicCurrents) to MATLAB path before running scripts.**
+- [L5PCs](L5PCs): contains the model codes with Ih blocked and without blocking Ih for a collaction of L5-PCs located randomly in a cortical column. It also contains the codes for the local field potentials (LFPs) and current source density (CSD) estimations. **Add [InputCurrents](InputCurrents) and [IonicCurrents](IonicCurrents) to MATLAB path before running scripts.**
 - [GenerateFigures](GenerateFigures): contains the programs used to create the figures.
 
 ## License
