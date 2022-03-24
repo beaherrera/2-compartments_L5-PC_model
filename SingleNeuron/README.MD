@@ -1,5 +1,7 @@
 This folder contains the model codes with Ih blocked (noIh) and with Ih present (Ih).
 
+Before running scripts, please **add [InputCurrents](/InputCurrents) and [IonicCurrents](/IonicCurrents) to the MATLAB path.**
+
 To solve each case, please run:
 - [mainIh.m](mainIh.m) for Ih present, and
 - [mainNoIh.m](mainNoIh.m) for Ih blocked.
