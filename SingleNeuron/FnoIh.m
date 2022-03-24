@@ -173,7 +173,8 @@ factorCa = 1e4*gamma/(Ad*d);
 Vd_0 = -65;
 [CamD_0, ~] = CaLKineticsW(Vd_0);
 I_Ca0 = gbar_CaD.* CamD_0.^2 .* (Vd_0 - E_CaD); % Ca current at resting potential
-dCa_idt = -factorCa.*((ICa-I_Ca0)./(z_Ca.*F)) - (Ca_i - Cai_inf)./tau_R; % calcium concentration in the dendritic compartment
+dCa_idt = -factorCa.*((ICa-I_Ca0)./(z_Ca.*F)) - (Ca_i - Cai_inf)./tau_R; %
+% calcium concentration in the dendritic compartment
 
 dNapmDdt = (NapmooD-NapmD)./NaptaumD; % Nap activation dendrites
 dNaphDdt = (NaphooD-NaphD)./NaptauhD; % Nap inactivation dendrites

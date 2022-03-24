@@ -42,7 +42,8 @@ Cm_d = 0.12e-9; % [F] membrane capacitance apical tuft compartment
 % Na
 gbar_NaS = 18e-6; % [mS] maximum conducatance of Na+ channels
 E_NaS = 50; % [mV] reversal potatial for the Na+ channels
-[NamooS, NataumS, NahooS,NatauhS] = NaKinetics(Vs); % gating variables and their time constant
+[NamooS, NataumS, NahooS,NatauhS] = NaKinetics(Vs); % gating variables and
+% their time constant
 
 % K
 gbar_KS = 5e-6; % [mS] maximum conducatance of K+ channels 
@@ -59,21 +60,25 @@ F = 9.648e4; % [Cmol-1] Faraday's constant
 temp = 310.15; % [K] temperature
 tau_R = 80e-3; % [s] Ca decay time constant
 Ca_o = 2; % [mM] extracellular calcium concentration
-Cai_inf = theta(jj); jj=jj+1; % [mM] intracellular equilibrium calcium concentration
+Cai_inf = theta(jj); jj=jj+1; % [mM] intracellular equilibrium calcium 
+% concentration
 Ca_const = (R*temp)/(z_Ca*F);
 E_CaD = Ca_const.*log(Ca_o./Ca_i); %Equilibrium Potential Ca
 
-[CamooD, CataumD] = CaLKineticsW(Vd-VshD); % gating variables and their time constant
+[CamooD, CataumD] = CaLKineticsW(Vd-VshD); % gating variables and their
+% time constant
 
 % persistent sodium - Nap
 gbar_NapD = 0.022e-6; % [S] maximum conducatance for persistent Na+ channels
 E_NaD = 50; % [mV] reversal potatial for the sodium channels
-[NapmooD, NaptaumD, NaphooD, NaptauhD] = NapKinetics(Vd-VshD); % gating variables and their time constant
+[NapmooD, NaptaumD, NaphooD, NaptauhD] = NapKinetics(Vd-VshD); % gating
+% variables and their time constant
 
 % slow inactivating potasium - Ks
 gbar_KsD = 28e-6; % [S] maximum conducatance for slow K+ channels
 E_KD = -85; % [mV] reversal potatial for the sodium channels
-[KsmooD, KstaumD, KshooD, KstauhD] = KslowKinetics(Vd-VshD); % gating variables and their time constant
+[KsmooD, KstaumD, KshooD, KstauhD] = KslowKinetics(Vd-VshD); % gating 
+% variables and their time constant
 
 % Ih current
 E_Ih = -45; % [mV] reversal potentail used for the Ih current
@@ -144,7 +149,8 @@ end
 
 %% Differential equations
 
-dXdt=zeros(numel(X),1); % creating dXdt with the number of elements of X -> No. of state variables to be solved for
+dXdt=zeros(numel(X),1); % creating dXdt with the number of elements of X
+% -> No. of state variables to be solved for
 
 %% Layer V PC
 %--- currents
@@ -165,8 +171,10 @@ I2_Final(indstim) = I2;
 I3_Final(indstim) = I3;
 
 %---- equations
-dVsdt = ((-31.5-Vs)./R_m + (Vd-Vs)./Rd_i + Ik_s + I3)./Cm_s; % Membrane potential at the soma
-dVddt  = ((-48.1-Vd)./Rd_m + (Vs-Vd)./Rd_i + Ik_d + I2)./Cm_d; % Membrane potential at the dendrite
+dVsdt = ((-31.5-Vs)./R_m + (Vd-Vs)./Rd_i + Ik_s + I3)./Cm_s; % Membrane
+% potential at the soma
+dVddt  = ((-48.1-Vd)./Rd_m + (Vs-Vd)./Rd_i + Ik_d + I2)./Cm_d; % Membrane
+% potential at the dendrite
 
  % soma
 dNamSdt = (NamooS - NamS)./NataumS; % INa activation soma
@@ -183,7 +191,8 @@ factorCa = 1e4*gamma/(Ad*d);
 Vd_0 = -55;
 [CamD_0, ~] = CaLKineticsW(Vd_0-VshD);
 I_Ca0 = gbar_CaD.* CamD_0.^2 .* (Vd_0 - E_CaD); % Ca current at resting potential
-dCa_idt = -factorCa.*((ICa-I_Ca0)./(z_Ca.*F)) - (Ca_i - Cai_inf)./tau_R; % calcium concentration in the dendritic compartment
+dCa_idt = -factorCa.*((ICa-I_Ca0)./(z_Ca.*F)) - (Ca_i - Cai_inf)./tau_R; % 
+% calcium concentration in the dendritic compartment
 
 dNapmDdt = (NapmooD-NapmD)./NaptaumD; % Nap activation dendrites
 dNaphDdt = (NaphooD-NaphD)./NaptauhD; % Nap inactivation dendrites

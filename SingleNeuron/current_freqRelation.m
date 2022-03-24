@@ -4,10 +4,12 @@ function current_freqRelation(V, step, tf, tspan, mustart_s, dmu)
 % created by Herrera et al., 2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-mu = (mustart_s:dmu:(mustart_s+(round(tf/step))*dmu)); % [mA] mean stimulation current
+mu = (mustart_s:dmu:(mustart_s+(round(tf/step))*dmu)); % [mA] mean 
+% stimulation current
 mu = mu.*1e6; % convert mA-nA
 
-intervals = 0:step:tf; % time intervals when the stimulation current had constant mean
+intervals = 0:step:tf; % time intervals when the stimulation current had
+% constant mean
 
 mu = mu(1:length(intervals));
 
@@ -18,7 +20,8 @@ loc = tspan(locs); % times when the APs occurred
 freq = zeros(size(mu)); % pre-allocating memory, AP frequency per current step
 
 for ii=1:(numel(freq)-1)
-    ind = find(loc>=intervals(ii) & loc<intervals(ii+1)); % selecting the APs that occorred at each current step
+    ind = find(loc>=intervals(ii) & loc<intervals(ii+1)); % selecting the APs
+    % that occorred at each current step
     freq(ii) = numel(ind)./step; % computing the AP rate per current step
 end
 
