@@ -8,7 +8,7 @@ MatLab (release 2018b)
 
 A memory of at least 16 GB is needed to run the trials to create the f-I curves. 
 
-## Toolbox
+## Dependencies
 For the numerical simulations and data processing the following MatLab toolboxes were used:
 - [CSDplotter-master](https://github.com/espenhgn/CSDplotter)
 - [RasterPlot](https://www.mathworks.com/matlabcentral/fileexchange/45671-flexible-and-fast-spike-raster-plotting)
